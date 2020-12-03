@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI | 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <p class="title">
+                Other key<br>features
+            </p>
+
+            <div class="span-desc">
+                <div class="items">
+                    <div class="box">
+                        <p class="caption">
+                            Live preview
+                        </p>
+                        <span class="desc">
+                            Preview the onboarding flows you create on your website or local environment.
+                        </span>
+                    </div>
+                    <div class="box scnd">
+                        <p class="caption">
+                            Element inspection
+                        </p>
+                        <span class="desc">
+                            Live preview provides a tool where you can easily select your element to apply the guides.                        </span>
+                    </div>
+                    <div class="box">
+                        <p class="caption">
+                            Control flow display
+                        </p>
+                        <span class="desc">
+                            Full control over how, where and when you want your flows to be displayed for your users.
+                        </span>
+                        <button type="button" class="btn">
+                            See how
+                            <svg width="8" class="arrow" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.28809 1.35486L6.37283 7.35486L1.28809 13.3549" stroke="#6585FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                            </button>
+                    </div>
+                    <div class="box">
+                        <p class="caption">
+                            Help along the way
+                        </p>
+                        <span class="desc">
+                            If you're stuck working in boardme, we've got you covered. We are helping with videos and tips.
+                        </span>
+                    </div>
+                    <div class="box">
+                        <p class="caption">
+                            Active bug reporting
+                        </p>
+                        <span class="desc">
+                            Find something not working as expected? Report the issue within a few clicks.
+                        </span>
+                    </div>
+                    <div class="box">
+                        <p class="caption">
+                            Detailed documentation
+                        </p>
+                        <span class="desc">
+                            Live preview provides a tool where you can easily select your element to apply the guides.
+                        </span>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+    </main>
+    <div class="ready">
+        <div class="container-2">
+            <h1>Ready to get started?</h1>
+            <p>Create an account and start helping your users learn how your app works.</p>
+            <button type="button" class="btn-2"> <span>Get Started</span> — it’s free</button>
+            <div class="close">
+                <svg class="svg" width="38" height="38" viewBox="0 0 28 28" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7L7 21" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 7L21 21" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fadeOut(){
+            let timeDiv = document.querySelector('.ready');          
+
+            let touch = setTimeout(function(){
+                timeDiv.classList.add('hide');
+            }, 200);
+        }
+
+        document.querySelector('.close').addEventListener('click', fadeOut);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Open Sans', sans-serif;
+}
+  *:focus {
+    outline: 0;
+}
+
+body{
+    background: url("https://cdn.discordapp.com/attachments/715325752639488012/783813395521470524/bg.png");
+    font-family: 'Mulish', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    color: white;
+}
+.container{
+    padding-top: 80px;
+    padding-left: 287px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.title{
+    padding-right: 250px;
+    font-weight: 900;
+    font-size: 36px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 650px;
+    margin-left: 25%;
+}
+.box{
+    width: 269px;
+
+}
+.scnd ~ .box{
+    margin-top: 50px;
+}
+.box:nth-child(even){
+    margin-left: 90px;
+}
+.caption{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.desc{
+    font-size: 16px;
+    width: 10px;
+}
+.btn{
+    margin-top: 20px;
+    width: 127px;
+    height: 40px;
+    background: #2A2B66;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #6585FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.arrow{
+    margin-left: 20px;
+}
+.btn:hover{
+    background-color: white;
+    transition: background-color 200ms linear;
+}
+.ready .container-2{
+    margin: 0 auto;
+    background: #6585FF;
+    border-radius: 15px;
+    width: 1057px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+.ready .container-2 h1{
+    padding: 57px 206px;
+    padding-bottom: 20px;
+    color: white;
+}
+.ready .container-2 p{
+    max-height: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+.ready .container-2 .btn-2{
+    width: 227px;
+    height: 43px;
+    border-radius: 21px;
+    margin-bottom: 56px;
+    font-size: 16px;
+    color: #1A1B38;
+    cursor: pointer;
+
+}
+.ready .container-2 span{
+    font-weight: 700;
+}
+.ready .container-2 .btn-2:hover{
+    background-color: #2A2B66;
+    color: white;
+    transition: background-color 200ms linear;
+}
+.close{
+    position: absolute;
+    top: 38px;
+    right: 58px;
+    cursor: pointer;
+}
+.close:hover{
+    border-radius: 100px;
+    background-color:rgba(36, 53, 122, 0.5);
+}
+.hide {
+    opacity: 0;
+    transition: opacity 400ms;
+  }
