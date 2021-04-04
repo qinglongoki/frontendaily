@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Roboto', sans-serif;
+}
+  *:focus {
+    outline: 0;
+}
+body{
+    background-color: #F4F6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    .container{
+
+        .chat-pop{
+            position: relative;
+            width: 451px;
+            height: 648px;
+            border-radius: 10px;
+            background: white;
+            padding: 45px 45px;
+            .close-pop{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 0 36px 0;
+                p{
+                    font-weight: 500;
+                    color: #181B2E;
+                    font-size: 22px;
+                }
+                .close{
+                    cursor: pointer;
+                    &:hover{
+                        border-radius: 100px;
+                        background-color:rgba(36, 53, 122, 0.1);
+                    }
+                }
+            }
+            .search{
+                margin: 0 0 36px 0;
+                svg{
+                    position: absolute;
+                    z-index: 1;
+                    margin: 22px 0 22px 22px;
+                }
+                input{
+                    position: relative;
+                    width: 361px;
+                    height: 76px;
+                    border-radius: 5px;
+                    background: #DEE5F0;
+                    padding: 28px 0 29px 69px;
+                    color: #415F8C;
+                    font-size: 16px;
+                }
+            }
+            .chat-area{
+                p{
+                    font-weight: 900;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .user-box{
+                    width: 391px;
+                    display: flex;
+                    align-items: center;                    
+                    .user-view{
+                        padding: 15px;
+                    }
+                    .chat-desc{
+                        display: flex;
+                        flex-direction: column;
+                        .name{
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+                        .username{
+                            font-size: 14px;
+                        }
+                    }
+                    .select{
+                        cursor: pointer;
+                        margin: 0px 60px 25px auto;
+                        position: relative;
+                        &:hover{
+                            .check-input ~ .check {
+                                background-color: #ccc;
+                            }
+                        }
+                        .check{
+                            position: absolute;
+                            height: 25px;
+                            width: 25px;
+                            background-color: #eee;
+                            border-radius: 15px;
+                            cursor: pointer;
+                            &:after{
+                                content: "";
+                                position: absolute;
+                                display: none;
+                                left: 9px;
+                                top: 5px;
+                                width: 7px;
+                                height: 12px;
+                                border: solid white;
+                                border-width: 0 2px 2px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                        .check-input{
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                            &:checked {
+                                ~ {
+                                    .check {
+                                        background-color: #327BE8;
+                                        &:after {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                ~ {
+                                    .check {
+                                        background-color: #327BE8;
+                                        &:after {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #F4F6FA;
+                        border-radius: 10px;
+                        transition: background-color 200ms linear;
+                    }
+                }
+            }
+        }
+    }
+}
