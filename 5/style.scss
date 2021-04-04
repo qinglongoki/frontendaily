@@ -79,6 +79,8 @@ body{
                     width: 391px;
                     display: flex;
                     align-items: center;                    
+                    cursor: pointer;
+
                     .user-view{
                         padding: 15px;
                     }
@@ -152,8 +154,12 @@ body{
                             }
                         }
                     }
+                    &:focus{
+                        background-color: #F4F6FA;
+                        border-radius: 10px;
+                        transition: background-color 200ms linear;
+                    }
                     &:hover{
-                        cursor: pointer;
                         background-color: #F4F6FA;
                         border-radius: 10px;
                         transition: background-color 200ms linear;

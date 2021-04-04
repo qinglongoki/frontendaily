@@ -1,9 +1,18 @@
 const userBox = document.querySelectorAll('.user-box');
 const checkBtn = document.querySelectorAll('.check-input');
+const checkSpan = document.querySelectorAll('.check')
+
 
   for(let i=0; i < userBox.length; i++){
       userBox[i].addEventListener('click', ()=>{
           checkBtn[i].click();
+        //   const result = getComputedStyle(checkSpan[i], ':after').display;
+        //   if(result === 'block'){
+        //       userBox[i].style.backgroundColor = "#F4F6FA";
+        //   }else{
+        //     userBox.style.backgroundColor = "none";
+        //   }
+        //   console.log(result);
       })
   }
 

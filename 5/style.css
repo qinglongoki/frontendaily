@@ -80,6 +80,7 @@ body {
   width: 391px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .main .container .chat-pop .chat-area .user-box .user-view {
   padding: 15px;
@@ -144,8 +145,12 @@ body {
 .main .container .chat-pop .chat-area .user-box .select .check-input:hover ~ .check:after {
   display: block;
 }
+.main .container .chat-pop .chat-area .user-box:focus {
+  background-color: #F4F6FA;
+  border-radius: 10px;
+  transition: background-color 200ms linear;
+}
 .main .container .chat-pop .chat-area .user-box:hover {
-  cursor: pointer;
   background-color: #F4F6FA;
   border-radius: 10px;
   transition: background-color 200ms linear;
